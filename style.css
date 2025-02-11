@@ -14,7 +14,7 @@
     --main-color: #FE6244;
     --text-color: #fff;
     --bg-color: #002;
-    --h1-font: 5rem;
+    --h1-font: 4rem;
     --h2-font: 2.23rem;
     --p-font: 0.9rem;
 }
@@ -84,8 +84,15 @@ section {
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr) ;
-    grid-gap: 1.5rem;
+    grid-gap: 0rem;
     align-items: center;
+    justify-items: center; /* Asegura que los elementos hijos estén centrados horizontalmente */
+
+}
+
+.home-img{
+    padding: 0;
+    margin: 0;
 }
 
 .home-img img{
@@ -97,6 +104,7 @@ section {
 .home-text h1{
     font-size: var(--h1-font);
     color: var(--main-color);
+    margin: 0;
 }
 
 .home-text h2{
