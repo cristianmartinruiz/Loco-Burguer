@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+:root {
+    --main-color: #FE6244;
+    --text-color: #fff;
+    --bg-color: #002;
+    --h1-font: 5rem;
+    --h2-font: 2.23rem;
+    --p-font: 0.9rem;
+}
+
+/* Header Section Code */
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 90px;
+    background: var(--bg-color);
+}
+
+.logo {
+    color: var(--main-color);
+    font-weight: 600px;
+    font-size: 2.4rem;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor:pointer;
+    display: none;
+}
