@@ -14,7 +14,7 @@
     --main-color: #FE6244;
     --text-color: #fff;
     --bg-color: #002;
-    --h1-font: 4rem;
+    --h1-font: 5rem;
     --h2-font: 2.23rem;
     --p-font: 0.9rem;
 }
@@ -54,7 +54,7 @@ header {
     display: flex;
 }
 
-.navbar a{
+.navbar a {
     color: var(--text-color);
     font-size: 1.1rem;
     padding: 10px 20px;
@@ -68,7 +68,7 @@ header {
 
 #menu-icon {
     font-size: 2rem;
-    cursor:pointer;
+    cursor: pointer;
     display: none;
 }
 
@@ -76,18 +76,16 @@ header {
 /* Home Section Code */
 
 section {
-    padding: 6.5 rem 17%;
+    padding: 6.5rem 17%;
 }
 
-.home{
+.home {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
-    grid-gap: 0rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1,5rem;
     align-items: center;
-    justify-items: center; /* Asegura que los elementos hijos estén centrados horizontalmente */
-
 }
 
 .home-img{
@@ -104,7 +102,6 @@ section {
 .home-text h1{
     font-size: var(--h1-font);
     color: var(--main-color);
-    margin: 0;
 }
 
 .home-text h2{
@@ -132,15 +129,15 @@ section {
 .about{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-gap: 2rem;
+    grid-gap: 1,5rem;
     align-items: center;
-    margin-bottom: 6.5rem; /* Añade margen inferior para espacio entre secciones */
 }
 
 
 .about-img {
     padding: 0;
     margin: 0;
+    order: 1;
 }
 
 .about-img img{
@@ -152,28 +149,25 @@ section {
 .about-text {
     padding: 0;
     margin: 0;
+    order: 2;
 }
 
-.about-text span{
+.about-text span {
     font-size: var(--h1-font);
     color: var(--main-color);
     font-weight: 600;
 }
 
-.about-text h2{
+.about-text h2 {
     font-size: var(--h2-font);
-    margin: 1rem 0;
 }
 
-.about-text p{
+.about-text p {
     margin: 0.8rem 0 1.8rem;
     line-height: 1.7;
 }
 
 /* Menu Section Code */
-.menu {
-    margin-bottom: 6.5rem; /* Añade margen inferior para espacio entre secciones */
-}
 
 .heading {
     text-align: center;
@@ -255,11 +249,11 @@ section {
 
 /* Services Section Code */
 
-.service-container{
+.services-container {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
-    grid-gap: 1.5rem;
-    margin-top: 4rem; 
+    justify-content: center; /* Centra las cajas horizontalmente */
+    gap: 2rem; /* Espacio entre las cajas */
+    margin-top: 4rem;
 }
 
 .service-box{
@@ -407,6 +401,13 @@ section {
 }
 
 @media (max-width: 720px){
+    .service-container {
+        display: block; /* Cambia a bloque para que las cajas aparezcan verticales */
+    }
+
+    .service-box {
+        margin-bottom: 2rem; /* Añade margen inferior para espacio entre las cajas */
+    }
     header{
         padding: 10px 16px;
     }
@@ -447,6 +448,7 @@ section {
 
     .about-img {
         order: 2;
+        margin-top: 1rem;
     }
 
     section {
@@ -454,7 +456,9 @@ section {
     }
     
     @media (max-width: 574px){
-        
+        .col {
+            width: 100;
+        }
     }
         
     

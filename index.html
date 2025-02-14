@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>Loco Burguers</title>
 </head>
@@ -12,9 +13,7 @@
     <!-- header section code -->
     <header>
         <a href="#home" class="logo">Loco Burguers</a>
-        <i class='bx bx-menu'></i>
-        
-
+        <i id="menu-icon" class='bx bx-menu'></i>
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -22,31 +21,29 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
-
     </header>
 
-    <!-- header section code -->
+    <!-- home section code -->
     <section class="home" id="home">
-        <div class="home-text">
+        <div class="home-text"  data-aos="zoom-in">
             <h1>Loco Burguers</h1>
             <h2>We Make <br>Delicious Burguers Everytime</h2>
             <a href="#" class="btn">Today's Menu</a>
         </div>
 
-        <div class="home-img">
+        <div class="home-img" data-aos="zoom-in">
             <img src="img/01.png" alt="">
         </div>
 
     </section>
 
-    <!-- header section code -->
+    <!-- about section code -->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-right">
             <img src="img/04.png" alt="">
         </div>
 
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-left">
             <span>About Us</span>
             <h2>We Make Good <br>Food Everytime</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit error quidem necessitatibus quam repellendus placeat
@@ -58,12 +55,12 @@
 
     <!-- Menu Section Code -->
     <section class="menu" id="menu">
-        <div class="heading">
+        <div class="heading" data-aos="fade-down">
             <span>Food Menu</span>
             <h2>Good Taste and Great Price</h2>
         </div>
 
-        <div class="menu-container">
+        <div class="menu-container" data-aos="fade-up">
             <div class="box">
                 <div class="box-img">
                     <img src="img/01.png" alt="">
@@ -71,7 +68,7 @@
                 <h2>Chicken Burguer</h2>
                 <h3>Tasty Food</h3>
                 <span>9.50e</span>
-                <i class='bx bx-cart' ></i>
+                <i class='bx bx-cart-alt'></i>
             </div>
 
             <div class="box">
@@ -101,12 +98,12 @@
     <!-- Service Section Code -->
 
     <section class="services" id="services">
-        <div class="heading">
+        <div class="heading" data-aos="fade-down">
             <span>Service</span>
             <h2>We Provide Best Quality Burguers</h2>
         </div>
 
-        <div class="service-container">
+        <div class="services-container" data-aos="fade-up">
 
             <div class="service-box">
                 <img src="img/s1.png" alt="">
@@ -193,7 +190,15 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        Offseet: 300,
+        duration: 1400,
+      });
+    </script>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
